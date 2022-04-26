@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whitebg"
+    tools:context=".SinonFragment1" >
+
+
+    <Spinner
+        android:id="@+id/sortByPeriodicSubUnit"
+        style="@style/spinnerTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortByPeriodicUnit"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="59dp"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:entries="@array/spinneritems"
+        android:textAlignment="textEnd"
+        tools:listitem="@android:layout/simple_gallery_item" />
+
+    <Spinner
+        android:id="@+id/sortByPeriodicHandler"
+        style="@style/spinnerTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortByPeriodicTreatType"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="59dp"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:entries="@array/spinneritems"
+        android:textAlignment="textEnd"
+        tools:listitem="@android:layout/simple_gallery_item" />
+
+
+    <Spinner
+        android:id="@+id/sortByPeriodicTreatType"
+        style="@style/spinnerTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortByPeriodicFaultType"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="59dp"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:entries="@array/spinneritems"
+        android:textAlignment="textEnd"
+        tools:listitem="@android:layout/simple_gallery_item" />
+
+    <Spinner
+        android:id="@+id/sortByPeriodicFaultType"
+        style="@style/spinnerTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortByPeriodicSubUnit"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="59dp"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:entries="@array/spinneritems"
+        android:textAlignment="textEnd"
+        tools:listitem="@android:layout/simple_gallery_item" />
+
+    <Spinner
+        android:id="@+id/sortByPeriodicUnit"
+        style="@style/spinnerTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="59dp"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:entries="@array/unitArray"
+        android:textAlignment="textEnd"
+        tools:listitem="@android:layout/simple_gallery_item" />
+    <Spinner
+        android:id="@+id/sortByPeriodicStatus"
+        style="@style/spinnerTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortByPeriodicHandler"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="59dp"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:entries="@array/spinneritems"
+        android:textAlignment="textEnd"
+        tools:listitem="@android:layout/simple_gallery_item" />
+    <Spinner
+        android:id="@+id/sortByPeriodicPeriod"
+        style="@style/spinnerTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sortByPeriodicStatus"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="59dp"
+        android:clickable="true"
+        android:clipChildren="false"
+        android:entries="@array/spinneritems"
+        android:textAlignment="textEnd"
+        tools:listitem="@android:layout/simple_gallery_item" />
+    <TextView
+        android:id="@+id/sortByPeriodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortByPeriodicStatus"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="38dp"
+        android:text="מיון לפי תקופה"
+        android:textColor="@color/colorBlue"
+        android:alpha="0.5"/>
+    <TextView
+        android:id="@+id/sortByPeriodicHandlerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortByPeriodicTreatTypeText"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="38dp"
+        android:text="מיון לפי עובד"
+        android:textColor="@color/colorBlue"
+        android:alpha="0.5"/>
+    <TextView
+        android:id="@+id/sortByPeriodicTreatTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortByPeriodicFaultTypeText"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="38dp"
+        android:text="מיון לפי סוג טיפול"
+        android:textColor="@color/colorBlue"
+        android:alpha="0.5"/>
+    <TextView
+        android:id="@+id/sortByPeriodicFaultTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortByPeriodicSubUnitText"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="38dp"
+        android:text="מיון לפי סוג עבודה"
+        android:textColor="@color/colorBlue"
+        android:alpha="0.5"/>
+    <TextView
+        android:id="@+id/sortByPeriodicUnitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="38dp"
+        android:text="מיון לפי מכלול"
+        android:textColor="@color/colorBlue"
+        android:alpha="0.5"/>
+    <TextView
+        android:id="@+id/sortByPeriodicSubUnitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortByPeriodicUnitText"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="38dp"
+        android:text="מיון לפי תת מכלול"
+        android:textColor="@color/colorBlue"
+        android:alpha="0.5"/>
+    <TextView
+        android:id="@+id/sortByPeriodicStatusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortByPeriodicHandler"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="38dp"
+        android:text="מיון לפי סטאטוס"
+        android:textColor="@color/colorBlue"
+        android:alpha="0.5"/>
+
+    <Button
+        android:id="@+id/sortByPeriodicFloatingIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sortByPeriodicPeriod"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="118dp"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/button_blue"
+        android:text="סינון עבודות"
+        android:textColor="#ffff" />
+
+
+</RelativeLayout>
